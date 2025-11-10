@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  background-color: burlywood;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+h1 {
+  width: 100%;
+  padding-left: 30px;
+}
+
+form,
+.conversion_result {
+  width: 50%;
+  background-color: beige;
+  padding: 30px;
+  height: 60vh;
+  border-radius: 16px;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+select {
+  width: 92.5%;
+}
+
+input:not(input[type="submit"]),
+select {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  width: 10%;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.tabs > .tab > a {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  margin: 10px 50px;
+  outline: none;
+  user-select: none;
+}
+
+.tabs > .tab > a:hover {
+  transition: all 0.2s ease-out;
+  border-radius: 2px;
+}
+
+.conversion_result {
+  background-color: beige;
+  padding: 30px 30px;
+  display: none;
+}
+
+#resetBtn {
+  background-color: white;
+  font-size: 16px;
+  padding: 8px 0px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 10%;
+}

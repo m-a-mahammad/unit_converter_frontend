@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Unit Converter</h1>
+  <div class="tabs">
+    <div class="tab">
+      <a href="#length" id="lengthTab" class="unitBtn">Length</a>
+    </div>
+    <div class="tab">
+      <a href="#weight" id="weightTab" class="unitBtn">Weight</a>
+    </div>
+    <div class="tab">
+      <a href="#temperature" id="tempTab" class="unitBtn">Temperature</a>
+    </div>
+  </div>
+
+  <form id="conversion_form" action="/submit" method="post" target="_self">
+    <label for="lengthInp">Enter the length to convert</label><br>
+    <input type="number" id="lengthInp" name="lengthInp" value="100" tabindex="2"><br>
+    <label>Convert from</label><br>
+    <select name="fromUnit" id="fromUnit" class="selectBtn">
+    </select><br>
+    <label>Convert to</label><br>
+    <select name="toUnit" id="toUnit" class="selectBtn">
+    </select><br>
+    <input type="submit" value="Convert" tabindex="1">
+  </form>
+
+  <div class="conversion_result">
+    <b>Result of you calculation</b>
+    <h2 class="calc_result">20ft = 609cm</h2>
+    <button id="resetBtn">Reset</button>
+  </div>
+</body>
+
+<script type="module" src="script.js"></script>
+
+</html>
